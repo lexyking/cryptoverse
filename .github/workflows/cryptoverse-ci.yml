@@ -17,8 +17,10 @@ jobs:
         name: Check out code
 
       - uses: mr-smithers-excellent/docker-build-push@v6
+        name: Build & push Docker image
         with:
           image: lexyking/lexy-demo
           registry: docker.io
+          enableBuildKit: true
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
