@@ -5,7 +5,7 @@ name: Cryptoverse project
 
 on:
   push:
-    branches: ["main"]
+    branches: ["mai"]
   pull_request:
     branches: ["main"]
 
