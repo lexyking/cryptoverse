@@ -4,7 +4,7 @@ RUN addgroup app && adduser -S -G app app
 
 USER app
 
-WORKDIR /usr/app
+WORKDIR /app
 
 COPY package*.json ./
 
