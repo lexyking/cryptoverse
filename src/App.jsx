@@ -1,7 +1,7 @@
-// import { Switch, Route, Link } from 'react-router-dom';
 import { Layout, Typography, Space } from 'antd';
 import './App.css';
-import Navbar from './components/Navbar';
+import {Navbar} from './components';
+import AppRoutes from './Routes'
 
 function App() {
   return (
@@ -9,7 +9,13 @@ function App() {
       <div className="navbar">
         <Navbar />
       </div>
-      <div className="main"></div>
+      <div className="main">
+        <Layout>
+          <div className="routes">
+           <AppRoutes />
+          </div>
+        </Layout>
+      </div>
       <div className="footer"></div>
     </main>
   );

@@ -12,8 +12,23 @@ const Navbar = () => {
         <Typography.Title level={3} className='logo'>
           <Link to='/'>Cryptoverse</Link>
         </Typography.Title>
-        {/* <Button className="menu-control-container"></Button> */}
       </div>
+         
+        {/* <Button className="menu-control-container"></Button> */}
+        <Menu theme='dark'>
+          <Menu.Item icon={<HomeOutlined />} key={'Home'}>
+            <Link to='/'>Home</Link>
+          </Menu.Item>
+          <Menu.Item icon={<FundOutlined />} key={'Cryptocurrencies'}>
+            <Link to='/cryptocurrenries'>Cryptocurrencies</Link>
+          </Menu.Item>
+          <Menu.Item icon={<MoneyCollectOutlined />} key={'Exchanges'}>
+            <Link to='/exchanges'>Exchanges</Link>
+          </Menu.Item>
+          <Menu.Item icon={<BulbOutlined />} key={'News'}>
+            <Link to='/news'>News</Link>
+          </Menu.Item>
+        </Menu>
     </nav>
   )
 }
