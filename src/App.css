@@ -293,6 +293,10 @@ padding: 0px 20px;
 .news-card{
   min-height: 300px !important;
 }
+
+.news-card>.ant-card-body {
+  padding: 0;
+}
 .news-image-container{
   display: flex !important;
   justify-content: space-between !important;

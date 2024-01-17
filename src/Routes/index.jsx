@@ -8,7 +8,7 @@ const AppRoutes = () => {
       element={<Homepage />}/>
       <Route exact path="/exchanges"
       element={<Exchanges />} />
-      <Route exact path="/cryptocurrenries"
+      <Route exact path="/cryptocurrencies"
       element={<CryptoCurrencies />} />
       <Route exact path="/crypto/:coinId"
       element={<CryptoDetails />} />

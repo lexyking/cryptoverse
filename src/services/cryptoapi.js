@@ -12,9 +12,12 @@ export const cryptoApi = createApi({
   baseQuery: fetchBaseQuery({baseUrl: import.meta.env.VITE_BASEURL}),
   endpoints: builder => ({
     getCryptos: builder.query({
-      query: () => createRequestApi('/coins')
+      query:(count) => createRequestApi(`/coins?limit=${count}`)
+    }),
+    getCryptoDetails: builder.query({
+      query:(cryptoId) => createRequestApi(`/coin/${cryptoId}`)
     })
   })
 })
 
-export const { useGetCryptosQuery} = cryptoApi
+export const { useGetCryptosQuery, useGetCryptoDetailsQuery} = cryptoApi
